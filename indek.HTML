@@ -1,0 +1,51 @@
+<html lang="en"
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosting Panel - ARG MAMENQIU</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hosting Panel - ARG MAMENQIU</h1>
+        <p>Kelola situs Anda dengan mudah dan aman.</p>
+    </header>
+    <nav>
+        <a href="#dashboard">Dasbor</a>
+        <a href="#monitoring">Monitoring Server</a>
+        <a href="#account">Akun Hosting</a>
+    </nav>
+    <main id="dashboard">
+        <section>
+            <h2>Selamat Datang di Hosting Panel</h2>
+            <form action="/add" method="POST">
+                <input type="text" name="domain" placeholder="Masukkan Domain" required>
+                <button type="submit">Tambah Domain</button>
+            </form>
+        </section>
+        <div class="dashboard-section">
+            <h2>Domain Terdaftar</h2>
+            <table>
+                <tr>
+                    <th>Domain</th>
+                    <th>CPU Usage (%)</th>
+                    <th>Memory Usage (%)</th>
+                    <th>Disk Usage (%)</th>
+                </tr>
+                <% data.forEach(function(item) { %>
+                <tr>
+                    <td><%= item.domain %></td>
+                    <td><%= item.cpuUsage.toFixed(2) %></td>
+                    <td><%= item.memoryUsage.toFixed(2) %></td>
+                    <td><%= item.diskUsage.toFixed(2) %></td>
+                </tr>
+                <% }); %>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 ARG MAMENQIU - Hosting Panel</p>
+    </footer>
+    <script src="/scripts/scripts.js"></script>
+</body>
+</html>
