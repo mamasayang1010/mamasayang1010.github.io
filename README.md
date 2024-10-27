@@ -1,189 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>https://mamasayang1010.github.io.git</title>
-    <link rel="stylesheet" href="/styles/styles.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+<p align="center"><img src="https://cdn.worldvectorlogo.com/logos/codeigniter-1.svg" width="100"></p>
+<p align="center">Shopping Cart Solution - CodeIgniter and Bootstrap</p>
+ 
+## Bootsrap Responsive Multi-Vendor, MultiLanguage Online Shop Platform
 
-        header {
-            text-align: center;
-            background-color: #333;
-            color: white;
-            padding: 1rem;
-        }
+Current versions:
 
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-        }
+* Codeigniter 3.1.13 (CodeIgniter Foundation)
+* Bootstrap 3.3.7
 
-        nav a {
-            color: white;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-        }
+## Donate
+<p>If this project help you reduce time to develop, you can give me a cup of coffee to continue its development. Thank you! :)</p>
 
-        nav a:hover {
-            background-color: #555;
-        }
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W5BR6K29BQX7E)
 
-        main {
-            padding: 1rem;
-        }
+## See also
+<p><a href="https://codecanyon.net/item/wp-invoices-pdf-electronic-invoicing-system/36891583" title="Electronic invoicing and warehouse management plugin which allows you to issue, send and download invoices as pdf file">WordPress Invoice Generator Plugin</a> - with WooCommerce Support, Stripe Payments, Recurring Invoicing, Currency Exchange, and More...</p>
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1rem;
-        }
+## Support of following features
 
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
-        }
+1. Multi-Vendor
+2. MultiLanguage
+3. Virtual products support
+4. Multi Templates support
+5. API
+6. Beautiful administration with high level of access
+7. Ajax based shopping cart
+8. Checkouts are saved to administration, email notifications for every new order
+9. Quantity of products managed from orders
+10. Add textual pages
+11. Activate and disable pages
+12. File manager in administration
+13. Integrated blog
+14. Email subscribe
+15. Easy installation
+16. Readable source
+17. Complete editing of public texts
+18. Receive ![PayPal Ecommerce Integration](https://raw.githubusercontent.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/master/github/paypalLogo.png "Paypal Integration") payments, also have option for paypal sandbox testing
+19. Fast-loading templates for good seo
+20. Site color change with easy to use gradient generator
+21. Add multilanguage cookie notificator from silktide.com for EU Cookie Law 
+22. Multiple templates.. also can easy create your own.. 
+23. Bank account payments support
+24. Highcharts statistics for orders
+25. Discount codes
+26. Available on English, Greek, Bulgarian
+27. Responsive public pages, responsive administration, responsive vendor pages
+28. Advanced search with treeView categories
+29. Easy manage of products (new filed for every added language, subcategories are easy to manage)
+30. Advanced sorting and order products
+31. etc.
 
-        th {
-            background-color: #333;
-            color: white;
-        }
+## Easy installation in 2 steps
+1. Import database.sql to your MySQL database
+2. Set <b>database</b>, <b>username</b> and <b>password</b> in application/config/database.php
 
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #333;
-            color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
+## Available Languages
+- ![CodeIgniter Ecommerce English](https://raw.githubusercontent.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/master/attachments/lang_flags/en.jpg "English Translation CodeIgniter") English
+- ![CodeIgniter Ecommerce Greece](https://raw.githubusercontent.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/master/attachments/lang_flags/gr.png "Greece Translation CodeIgniter") Greece
+- ![CodeIgniter Ecommerce Bulgarian](https://raw.githubusercontent.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/master/attachments/lang_flags/bg.jpg "Bulgarian Translation CodeIgniter") Bulgarian
+- ![CodeIgniter Ecommerce Indonesian](https://raw.githubusercontent.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/master/attachments/lang_flags/id.jpg "Indonesian Translation CodeIgniter") Indonesian
 
-        .game-canvas {
-            width: 100%;
-            height: 100vw;
-            max-width: 500px;
-            max-height: 500px;
-            margin: auto;
-        }
+## Login to administration with
+- Administration url - /admin (eg. https://yourwebsite.com/admin)
+- Username: admin 
+- Password: admin
 
-        .keys {
-            font-family: 'Lato', sans-serif;
-            text-align: center;
-            width: 100%;
-            padding: 10px;
-            box-sizing: border-box;
-            height: 200px;
-            margin: auto;
-        }
+## Vendors support
+- Login url is - /vendor/login (eg. https://yourwebsite.com/vendor/login)
+- Vendors are not supported only from "onepage" template.
+- Can register new vendor from url - /vendor/register.  (eg. https://yourwebsite.com/vendor/register)
+- Vendors must be enabled from administration - /admin (eg. https://yourwebsite.com/admin/settings) Settings -> Multi-Vendor Support (panel).
 
-        .chevron {
-            display: inline-block;
-        }
+## Users registration
+<p>Users /registration/login (https://yourwebsite.com/registration/login) is added only in <b>greenlabel template</b>. (easily can be added to any other template, just copy files: login.php, signup.php, user.php to the new template directory (application/views/templates) and change your design).</p>
+<b>Users can track their orders history only.</b>
 
-        .chevron::before {
-            border-style: solid;
-            border-width: 8px 8px 0 0;
-            content: '';
-            display: inline-block;
-            height: 20px;
-            width: 20px;
-            position: relative;
-            transform: rotate(-45deg);
-        }
+## Screenshots of public pages
+![MultiLanguage CodeIgniter Template Ecommerce](https://raw.githubusercontent.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/master/github/templates.png "Multiple Templates")
 
-        .chevron.down::before {
-            transform: rotate(135deg);
-        }
+## Screenshots of vendors pages
+![MultiVendor CodeIgniter Template Ecommerce](https://raw.githubusercontent.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/master/github/vendors_pages.jpg "Vendors Page Preview")
 
-        .chevron.right::before {
-            transform: rotate(45deg);
-        }
+## Screenshot of admin panel
+![CodeIgniter Administration Bootstrap](https://raw.githubusercontent.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/master/github/admin_panel4.png "Powerful Administration CodeIgniter")
 
-        .chevron.left::before {
-            transform: rotate(225deg);
-        }
+### How To Write Templates
+Read in our wiki - https://github.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/wiki/How-to-write-templates
 
-        .arr {
-            cursor: pointer;
-            width: 70px;
-            height: 70px;
-            text-align: center;
-            line-height: 100px;
-            background: gray;
-            color: white;
-            font-size: 50px;
-            border: 10px solid #ddd;
-            display: inline-block;
-            margin: 5px;
-            transition: background-color 0.05s linear;
-        }
+### Shopping cart peculiarities
+Read in our wiki - https://github.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/wiki/Shopping-cart-peculiarities
 
-        .arr:active {
-            background: #555;
-        }
+### Multi Vendor Support
+Read in our wiki - https://github.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/wiki/Multi-Vendor-Support
 
-        #game-container {
-            display: flex;
-            flex-direction: column;
-            background-color: rgba(220, 220, 220, 0.6);
-            margin: 1rem;
-            padding: 1rem;
-            border-radius: 5px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Hosting Panel - ARG MAMENQIU</h1>
-        <p>Kelola situs Anda dengan mudah dan aman.</p>
-    </header>
-    <nav>
-        <a href="#dashboard">Dasbor</a>
-        <a href="#monitoring">Monitoring Server</a>
-        <a href="#account">Akun Hosting</a>
-    </nav>
-    <main id="dashboard">
-        <section>
-            <h2>Selamat Datang di Hosting Panel</h2>
-            <form action="/add" method="POST">
-                <input type="text" name="domain" placeholder="Masukkan Domain" required>
-                <button type="submit">Tambah Domain</button>
-            </form>
-        </section>
-        <div class="dashboard-section">
-            <h2>Domain Terdaftar</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Domain</th>
-                        <th>CPU Usage (%)</th>
-                        <th>Memory Usage (%)</th>
-                        <th>Disk Usage (%)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <% data.forEach(function(item) { %>
-                    <tr>
-                        <td><%= item.domain %></td>
-                        <td><%= item.cpuUsage.toFixed(2) %></td>
-                        <td><%= item.memoryUsage.toFixed(2) %></td>
-                        <td><%= item.diskUsage.toFixed(2) %></td>
-                    </tr>
-                    <% }); %>
-                </tbody>
-            </table>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; mamasayang1010.github.io.git - Hosting Panel</p>
-    </footer>
-    <script src="/scripts/scripts.js"></script>
-</body>
-</html>
+### API Documentation
+Read in our wiki - https://github.com/kirilkirkov/Shopping-Cart-Solution-CodeIgniter/wiki/API
+
+### Server Requirements
+- PHP version 5.6 or newer (up to 8.1) is recommended.
+<p>It should work on 5.3.7 as well, but we strongly advise you NOT to run such old versions of PHP, because of potential security and performance issues, as well as missing features.</p>
